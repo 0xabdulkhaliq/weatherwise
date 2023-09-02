@@ -30,11 +30,12 @@ function updateStatisticsDashboard(weatherData) {
 
   timeMeta.textContent = getFormattedTime(weatherData.location.localtime)
 
-  temperature.textContent = getMaxTemperature(weatherData.current, false)
+  temperature.textContent = getMaxTemperature(weatherData.current, true)
 
   temperatureRange.textContent = getTemperatureRange(
     temperature.textContent,
-    weatherData.forecast.forecastday[0]
+    weatherData.daily,
+    0
   )
 
   weatherCondition.textContent = getWeatherConditionUsingCode(
@@ -57,7 +58,7 @@ function updateStatisticsDashboard(weatherData) {
 function updateGeneralStatistics(weatherData) {
   const statValues = {
     thermalSensation: `${getCeiledValue(weatherData.current.feelslike_c)}°c`,
-    rainProbability: `${weatherData.forecast.forecastday[0].day.daily_chance_of_rain}%`,
+    rainProbability: `${weatherData.daily.precipitation_probability_max[0]}%`,
     windSpeed: `${getCeiledValue(weatherData.current.wind_kph)} Km/h`,
     humidity: `${weatherData.current.humidity}%`,
     uvIndex: weatherData.current.uv
@@ -76,18 +77,16 @@ function updateGeneralStatistics(weatherData) {
 }
 
 function updatePredictions(weatherData) {
-  const futurePredictions = weatherData.forecast.forecastday
+  const futurePredictions = weatherData.daily
   const listWrapper = document.querySelector(".predictions__list")
 
   listWrapper.innerHTML = ""
 
-  for (let i = 1; i < futurePredictions.length; i++) {
+  for (let i = 1; i < 6; i++) {
     const listItem = document.createElement("li")
-    const currentWeather = futurePredictions[i]
-
-    const currentDate = currentWeather.date
+    const currentDate = futurePredictions["time"][i]
     const formattedDay = getFormattedDate(currentDate).split(",")[0]
-    const weatherCode = currentWeather.day.condition.code
+    const weatherCode = futurePredictions["weathercode"][i]
     const weatherCondition = getWeatherConditionUsingCode(weatherCode)
 
     listItem.innerHTML = `<span class="list__day">
@@ -109,10 +108,14 @@ function updatePredictions(weatherData) {
 
                                 <span class="list__temp-range">
                                 <span class="temp-range__sr-only">Temperature Range</span>
-                                    ${getMaxTemperature(currentWeather, true)}
+                                    ${getMaxTemperature(
+                                      futurePredictions,
+                                      false,
+                                      i
+                                    )}
                                 <abbr title="to" class="sr-only">-</abbr>
                                 <span class="temp-range__to">
-                                    ${getMinTemperature(currentWeather)}
+                                    ${getMinTemperature(futurePredictions, i)}
                                 </span>
                                 </span>
                             </p>`

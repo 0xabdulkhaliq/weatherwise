@@ -487,16 +487,10 @@ button {
   pointer-events: none;
 }
 
-.form__submit-btn--active,
-.form__submit-btn--loading {
+.form__submit-btn--active {
   visibility: visible;
   opacity: 1;
   pointer-events: all;
-}
-
-.form__submit-btn--loading {
-  background: 0% / cover url(./images/icons/loader.svg);
-  animation: 2s spin infinite;
 }
 
 @keyframes spin {

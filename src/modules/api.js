@@ -3,7 +3,7 @@ import { instantiateUIChanges, instantiate404Prompt } from "./ui"
 async function getWeatherData(latitude, longitude) {
   try {
     const response = await fetch(
-      `http://localhost:3000/weather?latitude=${latitude}&longitude=${longitude}` // Backend, to secure API Key
+      `http://localhost:7417/weather?latitude=${latitude}&longitude=${longitude}` // Backend, to secure API Key
     )
 
     if (response.ok) {

@@ -679,8 +679,10 @@ footer {
   .main__dashboard {
     margin: 0 1.7rem;
     padding: 0;
-    display: grid;
-    place-items: center;
+  }
+
+  .main__intro {
+    padding-top: 15.4rem;
   }
 
   .main__dashboard-wrapper {
@@ -688,6 +690,7 @@ footer {
     grid-template-columns: 1.015fr 1fr;
     grid-template-rows: 1.2fr 1fr;
     height: min(100%, 45rem);
+    max-width: unset;
     width: min(100%, 82rem);
   }
 

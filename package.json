@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "minify-css": "npx css-minify -d ./src -o ./dist",
+    "minify-css": "npx css-minify -d ./src -o ./dist && mv ./dist/styles.min.css ./dist/styles.css",
     "bundle-js": "npx webpack",
     "minify-html": "npx html-minifier --input-dir src --output-dir dist --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace --use-short-doctype --file-ext html",
     "build": "npm run bundle-js && npm run minify-html && npm run minify-css"

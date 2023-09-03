@@ -49,8 +49,8 @@ function getFormattedImage(weather, format, moment) {
   }
 
   return format === "svg"
-    ? `../images/icons/${imageUrl}`
-    : `../images/backgrounds/${imageUrl}`
+    ? `./images/icons/${imageUrl}`
+    : `./images/backgrounds/${imageUrl}`
 }
 
 function getMaxTemperature(data, isForecast, index) {

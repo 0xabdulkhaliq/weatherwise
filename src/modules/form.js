@@ -148,7 +148,7 @@ function submitBtnStateModifier(submitBtn, state) {
 function toggleLoadingAnimationForSubmitBtn(submitBtn, state) {
   state === "on"
     ? (submitBtn.style =
-        "background: 0% / cover url(./images/icons/loader.svg); animation: 2s spin infinite;")
+        "background: 0% / cover url(../images/icons/loader.svg); animation: 2s spin infinite;")
     : (submitBtn.style = "")
 }
 

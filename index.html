@@ -5,27 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WeatherWise</title>
     <link rel="stylesheet" href="./styles.css" />
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    rel="preload"
-    as="style"
-    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-  />
-  <link
-    rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-    media="print"
-    onload="this.media='all'"
-  />
-  <noscript>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800&display=swap"
+    />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800&display=swap"
+      media="print"
+      onload="this.media='all'"
     />
-  </noscript>
-  <link rel="icon" href="./images/favicon.svg" sizes="any" type="image/svg+xml">
-  --></head>
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800&display=swap"
+      />
+    </noscript>
+    <link
+      rel="icon"
+      href="./images/favicon.svg"
+      sizes="any"
+      type="image/svg+xml"
+    />
+  </head>
   <body>
     <main class="">
       <h1 class="main__sr-only">Weather Application</h1>
@@ -57,7 +62,7 @@
             class="form__suggestions-list form__suggestions--intro"
           ></ul>
 
-          <button class="form__submit-btn"></button>
+          <button class="form__submit-btn" aria-label="Submit Button"></button>
         </form>
       </section>
 
@@ -65,7 +70,10 @@
         <div class="main__dashboard-wrapper">
           <div class="dashboard__header-container">
             <div class="dashboard__header-wrapper">
-              <button class="header-wrapper__header">
+              <button
+                class="header-wrapper__header"
+                aria-label="WeatherWise - Home"
+              >
                 <img
                   src="./images/icons/Logo.svg"
                   alt=""
@@ -83,7 +91,10 @@
                   placeholder="Search Location"
                 />
                 <ul role="list" class="form__suggestions-list"></ul>
-                <button class="form__submit-btn"></button>
+                <button
+                  class="form__submit-btn"
+                  aria-label="Submit Button"
+                ></button>
               </form>
             </div>
             <div class="header-container__statistics">

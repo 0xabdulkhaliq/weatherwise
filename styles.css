@@ -147,15 +147,7 @@ a {
   --blue-light: #8fb2f5;
 }
 
-@font-face {
-  font-family: "Nunito";
-  src: url(./font/Nunito.ttf);
-  font-weight: 1 999;
-  font-display: swap;
-}
-
 body {
-  /* min-height: 100vh; */
   font-family: "Nunito", sans-serif;
   position: relative;
   background: center/cover url(./images/backgrounds/Background.png);
@@ -188,6 +180,7 @@ section {
 
 .description__welcome {
   font-size: 1.26rem;
+  color: var(--gray-100);
 }
 
 .description__welcome span {
@@ -333,7 +326,6 @@ address {
   all: unset;
   font-size: 1rem;
   color: var(--gray-100);
-  font-weight: 700;
 }
 
 .meta-wrapper__location time {
@@ -345,7 +337,15 @@ address {
   letter-spacing: -0.01rem;
 }
 
-time {
+h2,
+h3,
+time,
+address,
+.values__range,
+.dashboard__overview-section,
+.list__value,
+.values__weather-condition,
+.predictions__list {
   font-weight: 700;
 }
 
@@ -369,12 +369,10 @@ time {
 .values__range {
   display: block;
   margin-top: 1rem;
-  font-weight: 700;
 }
 
 .values__weather-condition {
   font-size: 0.85rem;
-  font-weight: 600;
 }
 
 .stat-data__illustration {
@@ -386,7 +384,6 @@ time {
 
 .dashboard__overview-section {
   color: var(--gray-200);
-  font-weight: 600;
   padding: 0.4rem 0.95rem;
 }
 
@@ -422,7 +419,6 @@ time {
 .predictions__list {
   display: flex;
   color: var(--gray-300);
-  font-weight: 700;
   padding: 1.45rem 0.6rem;
   justify-content: space-around;
 }
@@ -464,15 +460,6 @@ time {
   top: 0.4rem;
   width: 6rem;
   position: absolute;
-}
-
-h2,
-h3,
-strong,
-label,
-button {
-  font-weight: 700;
-  color: var(--gray-100);
 }
 
 .form__submit-btn {
@@ -537,6 +524,7 @@ button {
 
 .error-prompter__heading {
   font-size: 1.4rem;
+  color: var(--gray-100);
 }
 
 .main__error-prompter--active {

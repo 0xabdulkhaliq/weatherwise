@@ -306,8 +306,7 @@ li:first-child button,
 }
 
 .header-container__statistics {
-  background: center/cover
-    url(./images/backgrounds/Weather=Few\ Clouds\,\ Moment=Night.png) no-repeat;
+  background: center/cover url() no-repeat;
   height: 19rem;
   margin-top: 0.7rem;
   border-radius: 0.5rem;

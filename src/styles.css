@@ -153,8 +153,7 @@ body {
   background: center/cover url(./images/backgrounds/Background.png);
 }
 
-section,
-.main__dashboard-wrapper {
+section {
   min-height: 100vh;
 }
 
@@ -271,6 +270,7 @@ li:first-child button,
   gap: 0.55rem;
   max-width: 34rem;
   width: 100%;
+  height: 100%;
 }
 
 .main__dashboard form ul {

@@ -85,7 +85,7 @@ Unlocking the World of Weather Trends and Providing Insights You Can Trust.
 
 <div align=center>
 
- ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) &nbsp;![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) &nbsp;![JavaScript](https://img.shields.io/badge/ES6%20Modules%20-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black) &nbsp;![Webpack](https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black) &nbsp;![html-minifier](https://img.shields.io/badge/html%20minifier-A90533?style=for-the-badge&logo=html5&logoColor=white) &nbsp;![CSS3](https://img.shields.io/badge/css_minifier-2C2D72.svg?style=for-the-badge&logo=css3&logoColor=white) &nbsp;![Eslint](https://img.shields.io/badge/eslint-3A33D1?style=for-the-badge&logo=eslint&logoColor=white)
+ ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) &nbsp;&nbsp;![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) &nbsp;&nbsp;![JavaScript](https://img.shields.io/badge/ES6%20Modules%20-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black) &nbsp;&nbsp;![Webpack](https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black) &nbsp;&nbsp;![html-minifier](https://img.shields.io/badge/html%20minifier-A90533?style=for-the-badge&logo=html5&logoColor=white) &nbsp;&nbsp;![CSS3](https://img.shields.io/badge/css_minifier-2C2D72.svg?style=for-the-badge&logo=css3&logoColor=white)
 
 </div>
 
@@ -95,7 +95,7 @@ Unlocking the World of Weather Trends and Providing Insights You Can Trust.
 
 <div align=center>
   
-![NPM](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white) &nbsp;&nbsp;![Google](https://img.shields.io/badge/google-DA4437?style=for-the-badge&logo=google&logoColor=white) &nbsp;&nbsp;![Prettier](https://img.shields.io/badge/prettier-1A2C34?style=for-the-badge&logo=prettier&logoColor=F7BA3E) &nbsp;&nbsp;![Visual Studio Code](https://img.shields.io/badge/VS%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white) &nbsp;&nbsp;![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![NPM](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white) &nbsp;&nbsp;![Google](https://img.shields.io/badge/google-DA4437?style=for-the-badge&logo=google&logoColor=white) &nbsp;&nbsp;![Prettier](https://img.shields.io/badge/prettier-1A2C34?style=for-the-badge&logo=prettier&logoColor=F7BA3E) &nbsp;&nbsp;![Eslint](https://img.shields.io/badge/eslint-3A33D1?style=for-the-badge&logo=eslint&logoColor=white) &nbsp;&nbsp;![Visual Studio Code](https://img.shields.io/badge/VS%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white) &nbsp;&nbsp;![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 
 </div>
 
